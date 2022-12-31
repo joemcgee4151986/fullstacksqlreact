@@ -30,7 +30,7 @@ function App() {
             value={name}
             onChange={e => setName(e.target.value)}
           />
-          <button  value=" Send" type="submit" id="submit">Submit </button>
+          <button className="btn btn-primary">Submit</button>
         </form>
         <table className="table my-5">
           <thead>
