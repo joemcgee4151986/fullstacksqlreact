@@ -1,5 +1,5 @@
 import React, { Fragment, useState } from "react";
-import 'bootstrap/dist/css/bootstrap.min.css';
+import { Button } from 'react-bootstrap';
 import "./App.css";
 
 function App() {
@@ -31,7 +31,7 @@ function App() {
             value={name}
             onChange={e => setName(e.target.value)}
           />
-          <button className="btn btn-primary" ng-click="vm.submit()">Submit</button>
+          <Button className="btn btn-primary" ng-click="vm.submit()">Submit</Button>
         </form>
         <table className="table my-5">
           <thead>
