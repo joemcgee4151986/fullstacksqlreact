@@ -21,7 +21,7 @@ function App() {
     <Fragment>
       <div className="container text-center">
         <h1 className="my-5">Names</h1>
-        <form className="d-flex" onClick={this.onSubmitForm}>
+        <form className="d-flex" onClick={onSubmitForm}>
           <input
             type="text"
             name="name"
