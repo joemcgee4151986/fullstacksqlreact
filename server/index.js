@@ -16,9 +16,7 @@ app.get("/users", async (req, res) => {
   try {
     const { name } = req.query;
 
-    //first_name last_name => %{}%
-    //"Henry Ly" => %ly%
-    // || => OR SQL || => Concat
+ 
 
     const users = await pool.query(
       "SELECT * FROM users WHERE first_name || ' ' || last_name ILIKE $1",
